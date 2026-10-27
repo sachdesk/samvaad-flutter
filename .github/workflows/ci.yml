@@ -24,6 +24,10 @@ jobs:
       - name: Test
         run: flutter test
 
+      # Everything pub.dev checks before a publish (pubspec, licence, layout, size).
+      - name: Publish dry run
+        run: flutter pub publish --dry-run
+
       - name: Analyze example
         working-directory: example
         run: |
