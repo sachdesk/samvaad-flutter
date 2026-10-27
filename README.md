@@ -8,25 +8,34 @@ Version 0.1.0. Flutter 3.16+, iOS 15+, Android 7.0 (API 24)+.
 
 ## Install
 
-```yaml
-dependencies:
-  samvaad_widget:
-    git:
-      url: https://github.com/sachdesk/samvaad-flutter.git
-      ref: v0.1.0
+```sh
+flutter pub add samvaad_widget
 ```
 
-**iOS:** nothing extra. Flutter runs `pod install` for you, which pulls the `Samvaad`
-pod (~> 0.1.0). Set `platform :ios, '15.0'` (or higher) in `ios/Podfile`.
+or add it to `pubspec.yaml` yourself:
+
+```yaml
+dependencies:
+  samvaad_widget: ^0.1.0
+```
+
+**iOS:** the plugin depends on the `Samvaad` pod. Until that pod is on CocoaPods trunk,
+add it to `ios/Podfile`, inside the `Runner` target:
+
+```ruby
+pod 'Samvaad', :git => 'https://github.com/sachdesk/samvaad-ios.git', :tag => '0.1.0'
+```
+
+Set `platform :ios, '15.0'` (or higher) in the same file. Flutter runs `pod install` for
+you on the next build.
 
 Customers can attach photos and files in the chat, so add these to `ios/Runner/Info.plist`:
 
 - `NSCameraUsageDescription`, e.g. "Take a photo to send to Yobruh support."
 - `NSPhotoLibraryUsageDescription`, e.g. "Choose a photo to send to Yobruh support."
 
-**Android:** the plugin depends on `com.samvaads:widget:0.1.0`. Until it is on Maven
-Central, add the repository that hosts it to `android/build.gradle` (or
-`android/settings.gradle`): see the Android SDK README. Set `minSdk` to 24 or higher.
+**Android:** the plugin depends on `com.samvaads:widget:0.1.0`, which comes from Maven
+Central (already in Flutter's default repositories). Set `minSdk` to 24 or higher.
 
 ## Configure
 
