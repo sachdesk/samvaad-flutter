@@ -1,0 +1,22 @@
+name: samvaad_widget_example
+description: Yobruh Shop, a minimal app using the Samvaad Flutter plugin.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  samvaad_widget:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
