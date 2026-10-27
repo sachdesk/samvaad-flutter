@@ -25,9 +25,6 @@ jobs:
         run: flutter test
 
       # Everything pub.dev checks before a publish (pubspec, licence, layout, size).
-      - name: Show files changed by the Flutter tool
-        run: git status --short && git diff
-
       - name: Publish dry run
         run: flutter pub publish --dry-run
 
