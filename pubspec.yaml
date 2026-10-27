@@ -1,8 +1,14 @@
 name: samvaad_widget
 description: Samvaad chat for Flutter apps. A thin binding over the Samvaad iOS and Android SDKs.
 version: 0.1.0
-homepage: https://github.com/sachdesk/samvaad-flutter
-publish_to: none
+homepage: https://samvaads.com
+repository: https://github.com/sachdesk/samvaad-flutter
+issue_tracker: https://github.com/sachdesk/samvaad-flutter/issues
+documentation: https://developers.samvaads.com/docs/mobile-sdks
+topics:
+  - chat
+  - customer-support
+  - live-chat
 
 environment:
   sdk: ">=3.2.0 <4.0.0"
