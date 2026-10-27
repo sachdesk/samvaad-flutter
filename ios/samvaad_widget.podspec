@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 Flutter plugin binding over the Samvaad iOS SDK.
                        DESC
   s.homepage         = 'https://github.com/sachdesk/samvaad-flutter'
-  s.license          = { :type => 'Proprietary', :file => '../LICENSE' }
+  s.license          = { :type => 'MIT', :file => '../LICENSE' }
   s.author           = 'Sachdesk'
   s.source           = { :path => '.' }
   s.source_files     = 'Classes/**/*'
