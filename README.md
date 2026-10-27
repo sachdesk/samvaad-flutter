@@ -170,4 +170,4 @@ The `example/` app (Yobruh Shop) shows a Help button with an unread badge. Run
 
 ## License
 
-Copyright (c) 2026 Sachdesk. All rights reserved.
+MIT. See `LICENSE`.
